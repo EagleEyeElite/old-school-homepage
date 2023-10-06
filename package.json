@@ -1,0 +1,14 @@
+{
+  "name": "old-school-homepage",
+  "version": "1.0.0",
+  "description": "My very first homepage I build back in the 8th grade.",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server"
+  },
+  "author": "Conrad Klaus",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
