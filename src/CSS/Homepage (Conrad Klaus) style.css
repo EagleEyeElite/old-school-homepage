@@ -14,7 +14,7 @@ body {
 
 #Zeichen_des_Todes_drehend {position:absolute; right: 2em; cursor : url('../Animationen_etc/Cur Datein/tail2.ani');}
 
-#Hintergrundmuster_Retro   {position:absolute; top: 10em; right: 20em; cursor : url('../Animationen_etc/Cur Datein/tail2.ani');}
+#Hintergrundmuster_Retro   {position:absolute; top: 20em; right: 20em; cursor : url('../Animationen_etc/Cur Datein/tail2.ani');}
 
 #Brennendes_Zeichen 	   {position:absolute; top: 20em; left: 30em; cursor : url('../Animationen_etc/Cur Datein/tail2.ani');}
 
@@ -60,7 +60,7 @@ a.zurück-zur-Homepage {font-size: 25px; text-decoration: none;}
 
 span.Seiten {font-weight: bold; text-transform: capitalize;}
 
-#heading3 {color: blue;}
+#heading3 {color: black;}
 
 #Inhaltsverzeichnis {font-weight: normal; text-transform: none;}
 
