@@ -1,0 +1,165 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+ <head>
+  <title>Stundenplan</title>
+ </head>
+
+ <body>
+
+
+<script type="text/javascript">
+
+  
+
+  var snowsrc="coole-smilies.gif"
+
+  var no = 1;
+
+  var hidesnowtime = 3;
+
+  var snowdistance = "pageheight";
+
+
+
+  var ie4up = (document.all) ? 1 : 0;
+  var ns6up = (document.getElementById&&!document.all) ? 1 : 0;
+
+	function iecompattest(){
+	return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+	}
+
+  var dx, xp, yp;    
+  var am, stx, sty; 
+  var i, doc_width = 800, doc_height = 600; 
+  
+  if (ns6up) {
+    doc_width = self.innerWidth;
+    doc_height = self.innerHeight;
+  } else if (ie4up) {
+    doc_width = iecompattest().clientWidth;
+    doc_height = iecompattest().clientHeight;
+  }
+
+  dx = new Array();
+  xp = new Array();
+  yp = new Array();
+  am = new Array();
+  stx = new Array();
+  sty = new Array();
+  snowsrc=(snowsrc.indexOf("dynamicdrive.com")!=-1)? "snow3.gif" : snowsrc
+  for (i = 0; i < no; ++ i) {  
+    dx[i] = 0;                       
+    xp[i] = Math.random()*(doc_width-50);  
+    yp[i] = Math.random()*doc_height;
+    am[i] = Math.random()*20;        
+    stx[i] = 0.02 + Math.random()/10; 
+    sty[i] = 0.7 + Math.random();    
+		if (ie4up||ns6up) {
+      if (i == 0) {
+        document.write("<div id=\"dot"+ i +"\" style=\"POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><img src='"+snowsrc+"' border=\"0\"><\/a><\/div>");
+      } else {
+        document.write("<div id=\"dot"+ i +"\" style=\"POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><img src='"+snowsrc+"' border=\"0\"><\/div>");
+      }
+    }
+  }
+
+  function snowIE_NS6() {  
+    doc_width = ns6up?window.innerWidth-10 : iecompattest().clientWidth-10;
+		doc_height=(window.innerHeight && snowdistance=="windowheight")? window.innerHeight : (ie4up && snowdistance=="windowheight")?  iecompattest().clientHeight : (ie4up && !window.opera && snowdistance=="pageheight")? iecompattest().scrollHeight : iecompattest().offsetHeight;
+    for (i = 0; i < no; ++ i) {  // iterate for every dot
+      yp[i] += sty[i];
+      if (yp[i] > doc_height-50) {
+        xp[i] = Math.random()*(doc_width-am[i]-30);
+        yp[i] = 0;
+        stx[i] = 0.02 + Math.random()/10;
+        sty[i] = 0.7 + Math.random();
+      }
+      dx[i] += stx[i];
+      document.getElementById("dot"+i).style.top=yp[i]+"px";
+      document.getElementById("dot"+i).style.left=xp[i] + am[i]*Math.sin(dx[i])+"px";  
+    }
+    snowtimer=setTimeout("snowIE_NS6()", 10);
+  }
+
+	function hidesnow(){
+		if (window.snowtimer) clearTimeout(snowtimer)
+		for (i=0; i<no; i++) document.getElementById("dot"+i).style.visibility="hidden"
+	}
+		
+
+if (ie4up||ns6up){
+    snowIE_NS6();
+		if (hidesnowtime>0)
+		setTimeout("hidesnow()", hidesnowtime*1000)
+		}
+
+</script>
+
+  <table height="100%" width="100%" border="3" style="background-color: silver; border-color: green">
+   <tr>
+    <th>Stundenplan</th>
+    <th>Mo</th>
+    <th>Di</th>
+    <th>Mi</th>
+    <th>Do</th>
+    <th>Fr</th>
+   </tr>
+   <tr>
+    <th>1.<br />7:50-8:35</th>
+    <td><font color="blue"><u>En</u></font></td>
+    <td><font color="blue"><u>La</u></font></td>
+    <td><font color="blue"><u>Ge</u></font></td>
+    <td><font color="blue"><u>Ph</u></font></td>
+    <td><font color="blue"><u>Pro</u></font></td>
+   </tr>
+   <tr>
+    <th>2.<br />8:40-9-25</th>
+    <td><font color="blue"><u>De</u></font></td>
+    <td><font color="blue"><u>De</u></font></td>
+    <td><font color="blue"><u>Wn</u></font></td>
+    <td><font color="blue"><u>De</u></font></td>
+    <td><font color="blue"><u>Pro</u></font></td>
+   </tr>
+   <tr>
+    <th>3.<br />9:45-10:30</th>
+    <td><font color="blue"><u>La</u></font></td>
+    <td><font color="blue"><u>Sp</u></font></td>
+    <td><font color="blue"><u>Bio</u></font></td>
+    <td><font color="blue"><u>Ma</u></font></td>
+    <td><font color="blue"><u>Ma</u></font></td>
+   </tr>
+   <tr>
+    <th>4.<br />10:35-11:20</th>
+    <td><font color="blue"><u>Ph</u></font></td>
+    <td><font color="blue"><u>Sp</u></font></td>
+    <td><font color="blue"><u>En</u></font></td>
+    <td><font color="blue"><u>Pro</u></font></td>
+    <td><font color="blue"><u>Ma</u></font></td>
+   </tr>
+   <tr>
+    <th>5.<br />11:35-12-20</th>
+    <td><font color="blue"><u>Ma</u></font></td>
+    <td><font color="blue"><u>Mu</u></font></td>
+    <td><font color="blue"><u>La</u></font></td>
+    <td><font color="blue"><u>En</u></font></td>
+    <td><font color="blue"><u>Ku</u></font></td>
+   </tr>
+   <tr>
+    <th>6.<br />12:25-13:10</th>
+    <td><font color="blue"><u>Pro</u></font></td>
+    <td><font color="blue"><u>Bio</u></font></td>
+    <td><font color="blue"><u>Pol</u></font></td>
+    <td><font color="blue"><u>Pol</u></font></td>
+    <td><font color="blue"><u>Ku</u></font></td>
+   </tr>
+   <tr>
+    <th>7.<br />13:25-14:10</th>
+    <td><font color="blue"><u>Wn</u></font></td>
+    <td><font color="blue"><u>Ge</u></font></td>
+    <td><font color="blue"><u>Mu</u></font></a></td>
+    <td><font color="blue"><u>La</u></font></td>
+    <td>-</td>
+   </tr>
+  </table>
+ </body>
+</html>

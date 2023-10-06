@@ -3,15 +3,20 @@ th.Mo-Fr {width: 200px}
 th.Stunde {width: 150px; height:50px}
 
 
-body {background-image: url('../Animationen_etc/Fotos/Hintergrundmuster_Dick-Dünn-Karro.jpg'); background-repeat: repeat; background-attachment: fixed ; cursor : url('../Animationen_etc/Cur Datein/fireblue.ani');}
+body {
+    background-image: url('../Animationen_etc/Fotos/Hintergrundmuster_Dick-DÃ¼nn-Karro.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    cursor: url("/src/Animationen_etc/Cur Datein/fireblue.gif");
+}
 
-#Zombie {margin: 5px 0px 0px 5px;}
+#Zombie {margin: 5px 0 0 5px;}
 
-#Zeichen_des_Todes_drehend {position:absolute; top: 5,5em; right: 2em; cursor : url('../Animationen_etc/Cur Datein/tail2.ani');}
+#Zeichen_des_Todes_drehend {position:absolute; right: 2em; cursor : url('../Animationen_etc/Cur Datein/tail2.ani');}
 
 #Hintergrundmuster_Retro   {position:absolute; top: 10em; right: 20em; cursor : url('../Animationen_etc/Cur Datein/tail2.ani');}
 
-#Brennendes_Zeichen 	   {position:absolute; top: 20em; left: 20em; cursor : url('../Animationen_etc/Cur Datein/tail2.ani');}
+#Brennendes_Zeichen 	   {position:absolute; top: 20em; left: 30em; cursor : url('../Animationen_etc/Cur Datein/tail2.ani');}
 
 #Google_Bild 		   {position:absolute; top: 33em; right: 32em; cursor : url('../Animationen_etc/Cur Datein/tail2.ani');}
 
@@ -33,7 +38,7 @@ body {background-image: url('../Animationen_etc/Fotos/Hintergrundmuster_Dick-Dün
 
 #LOL 			   {position:absolute; top: 68em; left: 23em; cursor : url('../Animationen_etc/Cur Datein/tail2.ani');}
 
-#Drehende_Würfel 	   {position:absolute; top: 86em; left: 11em; cursor : url('../Animationen_etc/Cur Datein/tail2.ani');}
+#Drehende_Wï¿½rfel 	   {position:absolute; top: 86em; left: 11em; cursor : url('../Animationen_etc/Cur Datein/tail2.ani');}
 
 #Drehende_Spielkarte 	   {position:absolute; top: 86em; right: 19em; cursor : url('../Animationen_etc/Cur Datein/tail2.ani');}
 
@@ -51,14 +56,14 @@ a:visited {color: #663300;cursor : url('../Animationen_etc/Cur Datein/bagnhead.a
 
 a:link {color: #339900;}
 
-a.zurück-zur-Homepage {font-size: 25px; text-decoration: none;}
+a.zurÃ¼ck-zur-Homepage {font-size: 25px; text-decoration: none;}
 
 span.Seiten {font-weight: bold; text-transform: capitalize;}
 
 #heading3 {color: blue;}
 
-#Inhaltsverzeichnis: {font-weight: normal; text-transform: none;}
+#Inhaltsverzeichnis {font-weight: normal; text-transform: none;}
 
 h2 {font: 200% Forte, "Century Gothic", Arial; text-decoration: underline;}
 
-h1 {font: 350% "Bauhaus 93", "Comic Sans MS", Arial; margin: 0px 20px 5px 20px; border-width: 3px; border-color: #99cc00; border-style: solid; text-align: center; letter-spacing: 1em; cursor : url('../Animationen_etc/Cur Datein/banana-dance-ani.ani');}
+h1 {font: 350% "Bauhaus 93", "Comic Sans MS", Arial; margin: 0 20px 5px 20px; border-width: 3px; border-color: #99cc00; border-style: solid; text-align: center; letter-spacing: 1em; cursor : url('../Animationen_etc/Cur Datein/banana-dance-ani.ani');}

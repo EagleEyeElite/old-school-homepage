@@ -2,8 +2,7 @@
 <html>
  <head>
        <title>Stundenplan-8NNW</title>
-       <link rel="stylesheet" type="text/css" href="Homepage (Conrad Klaus) style.css">
-       <meta http-equiv="refresh" content="5; URL=Homepage (Conrad  Klaus).html"> 
+       <link rel="stylesheet" type="text/css" href="../CSS/Homepage (Conrad Klaus) style.css">
  </head>
  <body>
 
@@ -12,7 +11,7 @@
 
   
 
-  var snowsrc="snow3.gif"
+  var snowsrc="../Animationen_etc/Gif Datein/snow3.gif"
 
   var no = 10;
 
@@ -47,7 +46,7 @@
   am = new Array();
   stx = new Array();
   sty = new Array();
-  snowsrc=(snowsrc.indexOf("dynamicdrive.com")!=-1)? "snow3.gif" : snowsrc
+  snowsrc=(snowsrc.indexOf("dynamicdrive.com")!=-1)? "../Animationen_etc/Gif Datein/snow3.gif": snowsrc
   for (i = 0; i < no; ++ i) {  
     dx[i] = 0;                       
     xp[i] = Math.random()*(doc_width-50);  
@@ -57,9 +56,9 @@
     sty[i] = 0.7 + Math.random();    
 		if (ie4up||ns6up) {
       if (i == 0) {
-        document.write("<div id=\"dot"+ i +"\" style=\"POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><a href=\"http://dynamicdrive.com\"><img src='"+snowsrc+"' border=\"0\"><\/a><\/div>");
+        document.write("<div id=/"dot"+ i +"/" style=/"POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;/"><a href=/"http://dynamicdrive.com/"><img src='"+snowsrc+"' border=/"0/"><//a><//div>");
       } else {
-        document.write("<div id=\"dot"+ i +"\" style=\"POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><img src='"+snowsrc+"' border=\"0\"><\/div>");
+        document.write("<div id=/"dot"+ i +"/" style=/"POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;/"><img src='"+snowsrc+"' border=/"0/"><//div>");
       }
     }
   }
@@ -99,10 +98,10 @@ if (ie4up||ns6up){
 
 
 
-  <bgsound src="Musik\Hangover.mp3">
+  <bgsound src="../Musik/Hangover.mp3">
   <h1>Stundenplan der 8nnw</h1>
    <br />
-  <table border="3"; style="background-color: silver; border-color: green">
+  <table border="3" style="background-color: silver; border-color: green">
    <tr>
     <th class="Stunde">Stundenplan</th>
     <th class="Mo-Fr">Mo</th>
@@ -169,6 +168,6 @@ if (ie4up||ns6up){
    </tr>
   </table>
 
-  <a href="Homepage (Conrad  Klaus).html"; class="zurück-zur-Homepage">zurück zur Homepage</a>
+  <a href="../../Homepage (Conrad  Klaus).html" class="zurï¿½ck-zur-Homepage">zurï¿½ck zur Homepage</a>
  </body>
 </html>

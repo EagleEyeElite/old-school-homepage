@@ -2,7 +2,7 @@
 <html>
 
  <head> <title>Homepage (Conrad Klaus)</title>
-	<link rel="stylesheet" type="text/css" href="Programmieren/CSS/Homepage (Conrad Klaus) style.css";>
+	<link rel="stylesheet" type="text/css" href="src/CSS/Homepage (Conrad Klaus) style.css" ;>
 
 
 <style>
@@ -11,7 +11,7 @@ position:absolute;
 visibility:visible;
 top:-50px;
 font-size:12pt;
-font-family:Arial;
+font-family:Arial,serif;
 font-weight:bold;
 color:black;
 }
@@ -22,8 +22,8 @@ var x,y
 var step=20
 var flag=0
 
-// Deine Nachricht! Wichtig! Am Ende des Satzes ein Leerzeichen einfügen!
-var message=" Hallo. Wie gefällt dir dieser Text,der geil ist? "
+// Deine Nachricht! Wichtig! Am Ende des Satzes ein Leerzeichen einfï¿½gen!
+var message=" Hallo. Wie gefï¿½llt dir dieser Text,der geil ist? "
 message=message.split("")
 
 var xpos=new Array()
@@ -84,8 +84,8 @@ var timer=setTimeout("makesnake()",30)
  <body onLoad="makesnake()" style="width:100%;overflow-x:hidden;overflow-y:scroll" ;id="z2">
 
 
-<script>
-<!-- Beginning of JavaScript -
+<script type="application/javascript">
+// Beginning of JavaScript
 
 for (i=0;i<=message.length-1;i++) {
 document.write("<span id='span"+i+"' class='spanstyle'>")
@@ -117,12 +117,17 @@ document.onmousedown=click;
 
   <h1>Homepage (Conrad Klaus)</h1>
 
-	 <img src="Programmieren/Animationen_etc/Gif Datein/Zombie.gif" title="Zombie !"; id="Zombie"; />
-	 <embed src="Programmieren/Musik/Leider Geil (Leider Geil).mp3" loop="false" width="70" height="25";> 
+	 <img src="src/Animationen_etc/Gif Datein/Zombie.gif" title="Zombie !" id="Zombie" />
+	 <audio controls autoplay>
+	 	<source
+				src="src/Musik/Leider Geil (Leider Geil).mp3"
+				type="audio/mp3">
+	 </audio>
+
 	 <script id="Uhr" language="JavaScript" src="http://www.begann.de/uhren/uhr27.js"></script>
-	 <img id="Hintergrundmuster_Retro"; src="Programmieren/Animationen_etc/Fotos/Hintergrundmuster Retro.jpg"; title="Hintergrundmuster Retro"; />
-	 <img id="Brennendes_Zeichen"; src="Programmieren/Animationen_etc/Gif Datein/brennendes Zeichen.gif"; title="Brennendes Zeichen"; />
-	 <img id="Zeichen_des_Todes_drehend"; src="Programmieren/Animationen_etc/Gif Datein/drehendes Todes-zeichen.gif"; title="Zeichen des Todes (drehend)"; />
+	 <img id="Hintergrundmuster_Retro" src="src/Animationen_etc/Fotos/Hintergrundmuster Retro.jpg" title="Hintergrundmuster Retro" />
+	 <img id="Brennendes_Zeichen" src="src/Animationen_etc/Gif Datein/brennendes Zeichen.gif" title="Brennendes Zeichen" />
+	 <img id="Zeichen_des_Todes_drehend" src="src/Animationen_etc/Gif Datein/drehendes Todes-zeichen.gif" title="Zeichen des Todes (drehend)" />
 
 
 	<h2>-Inhaltsverzeichnis:</h2>
@@ -137,12 +142,12 @@ document.onmousedown=click;
 		<li><a href="#heading5">Spiele Seiten</a></li>
 		<li><a href="#heading6">Spiele</a></li>
 		<li><a href="#heading7">html.net</a></li>
-		<li><a href="#heading8">nützliche Seiten zum Programmieren</a></li>
+		<li><a href="#heading8">nÃ¼tzliche Seiten zum Programmieren</a></li>
 		<li><a href="#heading9">Schule</a></li>
 	  </ol>
 	  </div>
 
-  <hr class="Zwischen_h2_h2"></hr>
+  <hr class="Zwischen_h2_h2" />
 
 	<h2>-Seiten:</h2>
 
@@ -154,41 +159,41 @@ document.onmousedown=click;
 	    </ul>
 	    </span>
 
-	    <img id="Google_Bild"; src="Programmieren/Animationen_etc/Fotos/Google.jpg"; title="Google Bild"; />
+	    <img id="Google_Bild" ; src="src/Animationen_etc/Fotos/Google.jpg" ; title="Google Bild" ; />
 
-  <hr / class="Zwischen_h3_h3">
+  <hr class="Zwischen_h3_h3" />
 
 	  <h3 id="heading2">-YouTube:</h3>
 
 	    <span class="Seiten">
 	    <ul>
 		<li><a href="http://www.youtube.com/?gl=DE&hl=de">startseite</a></li>
-		<li><a href="http://www.youtube.com/user/MinecraftExpertDE/videos?view=0">minecraftexpertde<a/></li>
-		<li><a href="http://www.youtube.com/user/Gronkh/videos?view=0">gronkh<a/></li>
+		<li><a href="http://www.youtube.com/user/MinecraftExpertDE/videos?view=0">minecraftexpertde</a></li>
+		<li><a href="http://www.youtube.com/user/Gronkh/videos?view=0">gronkh</a></li>
 		<li><a href="http://www.youtube.com/user/PietSmittie/videos?view=0">pietsmitie</a></li>
 	    </ul>
 	    </span>
 
- 	   <img id="You_Tube_Bild"; src="Programmieren/Animationen_etc/Fotos/You Tube.jpg"; title="You Tube Bild"; />
-	   <img id="Minecraftexpertde"; src="Programmieren/Animationen_etc/Fotos/Minecraftexpertde.jpg"; title="Minecraftexpertde"; />
-	   <img id="Gronkh"; src="Programmieren/Animationen_etc/Fotos/Gronkh.jpg"; title="Gronkh"; />
+ 	   <img id="You_Tube_Bild" src="src/Animationen_etc/Fotos/You Tube.jpg" title="You Tube Bild" />
+	   <img id="Minecraftexpertde" src="src/Animationen_etc/Fotos/Minecraftexpertde.jpg" title="Minecraftexpertde" ; />
+	   <img id="Gronkh" src="src/Animationen_etc/Fotos/Gronkh.jpg" title="Gronkh" />
 
-  <hr / class="Zwischen_h3_h3">
+  <hr class="Zwischen_h3_h3" />
 
-	  <h3 id="heading3"; >-Gute Musik:</h3>
+	  <h3 id="heading3">-Gute Musik:</h3>
 
 	    <span class="Seiten">
 	    <ul>
-		<li><a href="Musik">musik, als Sondpack</a></li>
-		<li><a href="Musik.html">musik als Webseite</a></li>
+		<li><a href="/src/Alle%20anderen%20Seiten/Musik.html">musik, als Soundpack</a></li>
+		<li><a href="/src/Alle%20anderen%20Seiten/Musik.html">musik als Webseite</a></li>
 	    </ul>
 	    </span>
 
-	   <a href="Musik/Opus 13.mp3"; id="Musik_Link";><img src="Programmieren/Animationen_etc/Fotos/Apple-Musik.jpg" title="Apple-Musik (Link)"; /></a>
-	   <img id="Gitarre"; src="Programmieren/Animationen_etc/Fotos/Gitarre.jpg"; title="Gitarre"; />
-	   <img id="Blitz"; src="Programmieren/Animationen_etc/Gif Datein/Blitz 2.gif"; title="Blitz"; />
+	   <a href="/src/Musik/Opus 13.mp3" target="blank" id="Musik_Link"><img src="src/Animationen_etc/Fotos/Apple-Musik.jpg" title="Apple-Musik (Link)" /></a>
+	   <img id="Gitarre" src="src/Animationen_etc/Fotos/Gitarre.jpg" title="Gitarre" />
+	   <img id="Blitz" src="src/Animationen_etc/Gif Datein/Blitz 2.gif" title="Blitz" />
 
-  <hr / class="Zwischen_h3_h3">
+  <hr class="Zwischen_h3_h3" />
 
 	  <h3 id="heading4">-Cleverbot:</h3>
 
@@ -198,10 +203,10 @@ document.onmousedown=click;
 	    </ul>
 	    </span>
 
-	   <img id="LOL"; src="Programmieren/Animationen_etc/Fotos/LoL.jpg"; title="LOL"; />
-	   <img id="Smilie"; src="Programmieren/Animationen_etc/Gif Datein/Smilie.gif"; title="Smilie"; />
+	   <img id="LOL" src="src/Animationen_etc/Fotos/LoL.jpg" title="LOL" />
+	   <img id="Smilie" src="src/Animationen_etc/Gif Datein/Smilie.gif" title="Smilie" />
 
-  <hr / class="Zwischen_h3_h3">
+  <hr class="Zwischen_h3_h3" />
 
 	  <h3 id="heading5">-Spiele Seiten:</h3>
 
@@ -212,29 +217,29 @@ document.onmousedown=click;
 	    </ul>
 	    </span>
 
-	   <img id="Geld"; src="Programmieren/Animationen_etc/Gif Datein/Geldzeichen.gif"; title="Geld"; />
+	   <img id="Geld" src="src/Animationen_etc/Gif Datein/Geldzeichen.gif" title="Geld" />
 
-  <hr / class="Zwischen_h3_h3">
+  <hr class="Zwischen_h3_h3" />
 
 	  <h3 id="heading6">-Spiele:</h3>
 
 	    <span class="Seiten">
 	    <ul>
-		<li><a href="Programmieren/Spiele/winmine.exe">minesweeper</a></li>
-		<li><a href="Programmieren/Spiele/mspaint.exe">paint</a></li>
-		<li><a href="Programmieren/Spiele/freecell.exe">freeCell</a></li>
-		<li><a href="Programmieren/Spiele/sol.exe">solitär</a></li>
-		<li><a href="Programmieren/Spiele/spider.exe">spider solitär</a></li>
-		<li><a href="Programmieren/Spiele/mshearts.exe">hearts</a></li>
-		<li><a href="Programmieren/Spiele/Blobby Volley">blobby volley</a></li>
-		<li><a href="Programmieren/Spiele/Pinball/pinball.exe">pinball</a></li>
+		<li><a href="src/Spiele/winmine.exe">minesweeper</a></li>
+		<li><a href="src/Spiele/mspaint.exe">paint</a></li>
+		<li><a href="src/Spiele/freecell.exe">freeCell</a></li>
+		<li><a href="src/Spiele/sol.exe">solitÃ¤r</a></li>
+		<li><a href="src/Spiele/spider.exe">spider solitÃ¤r</a></li>
+		<li><a href="src/Spiele/mshearts.exe">hearts</a></li>
+		<li><a href="src/Spiele/Blobby Volley">blobby volley</a></li>
+		<li><a href="src/Spiele/Pinball/pinball.exe">pinball</a></li>
 	     </ul>
 	    </span>
 
-	   <img id="Drehende_Spielkarte"; src="Programmieren/Animationen_etc/Gif Datein/drehende Spielkarte.gif"; title="Drehende Spielkarte"; />
-	   <img id="Drehende_Würfel"; src="Programmieren/Animationen_etc/Gif Datein/drehende Würfel.gif"; title="Drehende Würfel"; />
+	   <img id="Drehende_Spielkarte" src="src/Animationen_etc/Gif Datein/drehende Spielkarte.gif" title="Drehende Spielkarte" />
+	   <img id="Drehende_Wï¿½rfel" src="src/Animationen_etc/Gif Datein/drehende WÃ¼rfel.gif" title="Drehende Wï¿½rfel" />
 
-  <hr / class="Zwischen_h3_h3">
+  <hr class="Zwischen_h3_h3" />
 
 	  <h3 id="heading7">-html.net:</h3>
 	    <span class="Seiten">
@@ -244,28 +249,28 @@ document.onmousedown=click;
 		<li><a href="http://de.html.net/tutorials/css/">CSS</a></li>
 		<li><a href="http://de.html.net/tutorials/php/">PHP</a></li>
 		<li><a href="http://html.net/tutorials/javascript/">JavaScript</a></li>
-		<li><a href="Alle HTML.net Seiten.html" target="blank">ALLe html.net Seiten</a></li>
+		<li><a href="/src/Alle%20anderen%20Seiten/Alle HTML.net Seiten.html">ALLe html.net Seiten</a></li>
 	    </ul>
 	    </span>
 
-	   <img id="html_net_Logo"; src="Programmieren/Animationen_etc/Fotos/logo.png"; title="html.net Logo"; />
+	   <img id="html_net_Logo" src="src/Animationen_etc/Fotos/logo.png" title="html.net Logo" />
 
-  <hr / class="Zwischen_h3_h3">
+  <hr class="Zwischen_h3_h3" />
 
-	  <h3 id="heading8">-nützliche Seiten zum Programmieren:</h3>
+	  <h3 id="heading8">-nÃ¼tzliche Seiten zum Programmieren:</h3>
 
 	    <span class="Seiten">
 	    <ul>
 		<li><a href="http://www.freegifs.de/animierte-gifs/">.gif Seite</a></li>
-		<li><a href="Programmieren/html.net/Alle-Farben/Alle-Farben.docx">alle Farben</a></li>
+		<li><a href="src/html.net/Alle-Farben/Alle-Farben.docx">alle Farben</a></li>
 		<li><a href="http://images.google.de/">google Bilder</a></li>
 		<li><a href="http://www.friedels-home.de/index.html?/JavaScripte/Text_folgt_Maus/text_folgt_maus.htm">geile Ideen</a></li>
 		<li><a href="http://www.3dsceneries.com/uhren/uhren_galerie.html#">Uhren</a></li>
-		<li><a href="http://www.totallyfreecursors.com/category.cfm/id/85/Comics.htm">cur. Dateien/Mäuse</a></li>
+		<li><a href="http://www.totallyfreecursors.com/category.cfm/id/85/Comics.htm">cur. Dateien/MÃ¤use</a></li>
 	    </ul>
 	    </span>
 
-  <hr / class="Zwischen_h3_h3">
+  <hr class="Zwischen_h3_h3" />
 
 	  <h3 id="heading9">-Schule:</h3>
 
@@ -273,17 +278,17 @@ document.onmousedown=click;
 	    <ul>
 		<li><a href="http://www.ratsgymnasium-row.de/">hauptseite</a></li>
 		<li><a href="http://ratsgymnasium-row.eu/idesk/">ice-Surfing</a></li>
-		<li><a href="Stundenplan.html">Stundenplan-8NNW</a></li>
+		<li><a href="/src/Alle%20anderen%20Seiten/Stundenplan.html">Stundenplan-8NNW</a></li>
 	    </ul>
 	    </span>
 
-	   <img id="Drehendes_Feuerzeichen"; src="Programmieren/Animationen_etc/Gif Datein/feuerzeichen].gif"; title="Drehendes Feuerzeichen"; />
+	   <img id="Drehendes_Feuerzeichen" src="src/Animationen_etc/Gif Datein/feuerzeichen].gif" title="Drehendes Feuerzeichen" />
 
- <hr / class="Zwischen_h3_h3">
+ <hr class="Zwischen_h3_h3" />
 
 	 
     <script type="text/javascript" src="http://furhomepage.de/countdown/clock.php?txcolor=000000&dline=2014-09-10-01-00-00&bgcolor=FFFFFF&mode=true&szerokosc=300&alpha=4"></script>
-    <img src="Programmieren/Animationen_etc/Fotos/Download.jpg" align="right" title="Farcride"; />
+    <img src="src/Animationen_etc/Fotos/Download.jpg" align="right" title="Farcride" />
 
  </body>
 
