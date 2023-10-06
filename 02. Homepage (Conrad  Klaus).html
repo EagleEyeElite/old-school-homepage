@@ -1,0 +1,290 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+ <head> <title>Homepage (Conrad Klaus)</title>
+	<link rel="stylesheet" type="text/css" href="Programmieren/CSS/Homepage (Conrad Klaus) style.css";>
+
+
+<style>
+.spanstyle {
+position:absolute;
+visibility:visible;
+top:-50px;
+font-size:12pt;
+font-family:Arial;
+font-weight:bold;
+color:black;
+}
+</style>
+<script>
+
+var x,y
+var step=20
+var flag=0
+
+// Deine Nachricht! Wichtig! Am Ende des Satzes ein Leerzeichen einfügen!
+var message=" Hallo. Wie gefällt dir dieser Text,der geil ist? "
+message=message.split("")
+
+var xpos=new Array()
+for (i=0;i<=message.length-1;i++) {
+xpos[i]=-50
+}
+
+var ypos=new Array()
+for (i=0;i<=message.length-1;i++) {
+ypos[i]=-50
+}
+
+function handlerMM(e){
+x = (document.layers) ? e.pageX : document.body.scrollLeft+event.clientX
+y = (document.layers) ? e.pageY : document.body.scrollTop+event.clientY
+flag=1
+}
+
+function makesnake() {
+if (flag==1 && document.all) {
+for (i=message.length-1; i>=1; i--) {
+xpos[i]=xpos[i-1]+step
+ypos[i]=ypos[i-1]
+}
+xpos[0]=x+step
+ypos[0]=y
+
+for (i=0; i<message.length-1; i++) {
+var thisspan = eval("span"+(i)+".style")
+thisspan.posLeft=xpos[i]
+thisspan.posTop=ypos[i]
+}
+}
+
+else if (flag==1 && document.layers) {
+for (i=message.length-1; i>=1; i--) {
+xpos[i]=xpos[i-1]+step
+ypos[i]=ypos[i-1]
+}
+xpos[0]=x+step
+ypos[0]=y
+
+for (i=0; i<message.length-1; i++) {
+var thisspan = eval("document.span"+i)
+thisspan.left=xpos[i]
+thisspan.top=ypos[i]
+}
+}
+var timer=setTimeout("makesnake()",30)
+}
+
+</script>
+
+	
+ </head>
+
+
+ <body onLoad="makesnake()" style="width:100%;overflow-x:hidden;overflow-y:scroll" ;id="z2">
+
+
+<script>
+<!-- Beginning of JavaScript -
+
+for (i=0;i<=message.length-1;i++) {
+document.write("<span id='span"+i+"' class='spanstyle'>")
+document.write(message[i])
+document.write("</span>")
+}
+
+if (document.layers){
+document.captureEvents(Event.MOUSEMOVE);
+}
+document.onmousemove = handlerMM;
+
+// - End of JavaScript - -->
+</script>
+
+
+
+
+<script type="text/javascript">
+function click() {
+  if (event.button==2) {
+    alert('He,He');
+   };
+};
+document.onmousedown=click;
+</script>
+
+
+
+  <h1>Homepage (Conrad Klaus)</h1>
+
+	 <img src="Programmieren/Animationen_etc/Gif Datein/Zombie.gif" title="Zombie !"; id="Zombie"; />
+	 <embed src="Programmieren/Musik/Leider Geil (Leider Geil).mp3" loop="false" width="70" height="25";> 
+	 <script id="Uhr" language="JavaScript" src="http://www.begann.de/uhren/uhr27.js"></script>
+	 <img id="Hintergrundmuster_Retro"; src="Programmieren/Animationen_etc/Fotos/Hintergrundmuster Retro.jpg"; title="Hintergrundmuster Retro"; />
+	 <img id="Brennendes_Zeichen"; src="Programmieren/Animationen_etc/Gif Datein/brennendes Zeichen.gif"; title="Brennendes Zeichen"; />
+	 <img id="Zeichen_des_Todes_drehend"; src="Programmieren/Animationen_etc/Gif Datein/drehendes Todes-zeichen.gif"; title="Zeichen des Todes (drehend)"; />
+
+
+	<h2>-Inhaltsverzeichnis:</h2>
+
+	  <div id="Inhaltsverzeichnis:">
+	  <ol>
+	  
+		<li><a href="#heading1">Google</a></li>
+		<li><a href="#heading2">YouTube</a></li>
+		<li><a href="#heading3">Gute Musik</a></li>
+		<li><a href="#heading4">Cleverbot</a></li>
+		<li><a href="#heading5">Spiele Seiten</a></li>
+		<li><a href="#heading6">Spiele</a></li>
+		<li><a href="#heading7">html.net</a></li>
+		<li><a href="#heading8">nützliche Seiten zum Programmieren</a></li>
+		<li><a href="#heading9">Schule</a></li>
+	  </ol>
+	  </div>
+
+  <hr class="Zwischen_h2_h2"></hr>
+
+	<h2>-Seiten:</h2>
+
+	  <h3 id="heading1">-Google:</h3>
+
+	    <span class="Seiten">
+	    <ul>
+		<li><a href="http://www.google.de/" class="Seiten">startseite</a></li>
+	    </ul>
+	    </span>
+
+	    <img id="Google_Bild"; src="Programmieren/Animationen_etc/Fotos/Google.jpg"; title="Google Bild"; />
+
+  <hr / class="Zwischen_h3_h3">
+
+	  <h3 id="heading2">-YouTube:</h3>
+
+	    <span class="Seiten">
+	    <ul>
+		<li><a href="http://www.youtube.com/?gl=DE&hl=de">startseite</a></li>
+		<li><a href="http://www.youtube.com/user/MinecraftExpertDE/videos?view=0">minecraftexpertde<a/></li>
+		<li><a href="http://www.youtube.com/user/Gronkh/videos?view=0">gronkh<a/></li>
+		<li><a href="http://www.youtube.com/user/PietSmittie/videos?view=0">pietsmitie</a></li>
+	    </ul>
+	    </span>
+
+ 	   <img id="You_Tube_Bild"; src="Programmieren/Animationen_etc/Fotos/You Tube.jpg"; title="You Tube Bild"; />
+	   <img id="Minecraftexpertde"; src="Programmieren/Animationen_etc/Fotos/Minecraftexpertde.jpg"; title="Minecraftexpertde"; />
+	   <img id="Gronkh"; src="Programmieren/Animationen_etc/Fotos/Gronkh.jpg"; title="Gronkh"; />
+
+  <hr / class="Zwischen_h3_h3">
+
+	  <h3 id="heading3"; >-Gute Musik:</h3>
+
+	    <span class="Seiten">
+	    <ul>
+		<li><a href="Musik">musik, als Sondpack</a></li>
+		<li><a href="Musik.html">musik als Webseite</a></li>
+	    </ul>
+	    </span>
+
+	   <a href="Musik/Opus 13.mp3"; id="Musik_Link";><img src="Programmieren/Animationen_etc/Fotos/Apple-Musik.jpg" title="Apple-Musik (Link)"; /></a>
+	   <img id="Gitarre"; src="Programmieren/Animationen_etc/Fotos/Gitarre.jpg"; title="Gitarre"; />
+	   <img id="Blitz"; src="Programmieren/Animationen_etc/Gif Datein/Blitz 2.gif"; title="Blitz"; />
+
+  <hr / class="Zwischen_h3_h3">
+
+	  <h3 id="heading4">-Cleverbot:</h3>
+
+	    <span class="Seiten">
+	    <ul>
+		<li><a href="http://cleverbot.com/">hauptseite</a></li>
+	    </ul>
+	    </span>
+
+	   <img id="LOL"; src="Programmieren/Animationen_etc/Fotos/LoL.jpg"; title="LOL"; />
+	   <img id="Smilie"; src="Programmieren/Animationen_etc/Gif Datein/Smilie.gif"; title="Smilie"; />
+
+  <hr / class="Zwischen_h3_h3">
+
+	  <h3 id="heading5">-Spiele Seiten:</h3>
+
+	    <span class="Seiten">
+	    <ul>
+		<li><a href="http://www.spielaffe.de/">spielaffe</a></li>
+		<li><a href="http://www.spielen.com/">spielen.com</a></li>
+	    </ul>
+	    </span>
+
+	   <img id="Geld"; src="Programmieren/Animationen_etc/Gif Datein/Geldzeichen.gif"; title="Geld"; />
+
+  <hr / class="Zwischen_h3_h3">
+
+	  <h3 id="heading6">-Spiele:</h3>
+
+	    <span class="Seiten">
+	    <ul>
+		<li><a href="Programmieren/Spiele/winmine.exe">minesweeper</a></li>
+		<li><a href="Programmieren/Spiele/mspaint.exe">paint</a></li>
+		<li><a href="Programmieren/Spiele/freecell.exe">freeCell</a></li>
+		<li><a href="Programmieren/Spiele/sol.exe">solitär</a></li>
+		<li><a href="Programmieren/Spiele/spider.exe">spider solitär</a></li>
+		<li><a href="Programmieren/Spiele/mshearts.exe">hearts</a></li>
+		<li><a href="Programmieren/Spiele/Blobby Volley">blobby volley</a></li>
+		<li><a href="Programmieren/Spiele/Pinball/pinball.exe">pinball</a></li>
+	     </ul>
+	    </span>
+
+	   <img id="Drehende_Spielkarte"; src="Programmieren/Animationen_etc/Gif Datein/drehende Spielkarte.gif"; title="Drehende Spielkarte"; />
+	   <img id="Drehende_Würfel"; src="Programmieren/Animationen_etc/Gif Datein/drehende Würfel.gif"; title="Drehende Würfel"; />
+
+  <hr / class="Zwischen_h3_h3">
+
+	  <h3 id="heading7">-html.net:</h3>
+	    <span class="Seiten">
+	    <ul>
+		<li><a href="http://de.html.net/">startseite</a></li>
+		<li><a href="http://de.html.net/tutorials/html/">HTML</a></li>
+		<li><a href="http://de.html.net/tutorials/css/">CSS</a></li>
+		<li><a href="http://de.html.net/tutorials/php/">PHP</a></li>
+		<li><a href="http://html.net/tutorials/javascript/">JavaScript</a></li>
+		<li><a href="Alle HTML.net Seiten.html" target="blank">ALLe html.net Seiten</a></li>
+	    </ul>
+	    </span>
+
+	   <img id="html_net_Logo"; src="Programmieren/Animationen_etc/Fotos/logo.png"; title="html.net Logo"; />
+
+  <hr / class="Zwischen_h3_h3">
+
+	  <h3 id="heading8">-nützliche Seiten zum Programmieren:</h3>
+
+	    <span class="Seiten">
+	    <ul>
+		<li><a href="http://www.freegifs.de/animierte-gifs/">.gif Seite</a></li>
+		<li><a href="Programmieren/html.net/Alle-Farben/Alle-Farben.docx">alle Farben</a></li>
+		<li><a href="http://images.google.de/">google Bilder</a></li>
+		<li><a href="http://www.friedels-home.de/index.html?/JavaScripte/Text_folgt_Maus/text_folgt_maus.htm">geile Ideen</a></li>
+		<li><a href="http://www.3dsceneries.com/uhren/uhren_galerie.html#">Uhren</a></li>
+		<li><a href="http://www.totallyfreecursors.com/category.cfm/id/85/Comics.htm">cur. Dateien/Mäuse</a></li>
+	    </ul>
+	    </span>
+
+  <hr / class="Zwischen_h3_h3">
+
+	  <h3 id="heading9">-Schule:</h3>
+
+	    <span class="Seiten">
+	    <ul>
+		<li><a href="http://www.ratsgymnasium-row.de/">hauptseite</a></li>
+		<li><a href="http://ratsgymnasium-row.eu/idesk/">ice-Surfing</a></li>
+		<li><a href="Stundenplan.html">Stundenplan-8NNW</a></li>
+	    </ul>
+	    </span>
+
+	   <img id="Drehendes_Feuerzeichen"; src="Programmieren/Animationen_etc/Gif Datein/feuerzeichen].gif"; title="Drehendes Feuerzeichen"; />
+
+ <hr / class="Zwischen_h3_h3">
+
+	 
+    <script type="text/javascript" src="http://furhomepage.de/countdown/clock.php?txcolor=000000&dline=2014-09-10-01-00-00&bgcolor=FFFFFF&mode=true&szerokosc=300&alpha=4"></script>
+    <img src="Programmieren/Animationen_etc/Fotos/Download.jpg" align="right" title="Farcride"; />
+
+ </body>
+
+</html>

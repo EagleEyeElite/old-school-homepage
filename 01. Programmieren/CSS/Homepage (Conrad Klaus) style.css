@@ -1,0 +1,64 @@
+th.Mo-Fr {width: 200px}
+
+th.Stunde {width: 150px; height:50px}
+
+
+body {background-image: url('../Animationen_etc/Fotos/Hintergrundmuster_Dick-Dünn-Karro.jpg'); background-repeat: repeat; background-attachment: fixed ; cursor : url('../Animationen_etc/Cur Datein/fireblue.ani');}
+
+#Zombie {margin: 5px 0px 0px 5px;}
+
+#Zeichen_des_Todes_drehend {position:absolute; top: 5,5em; right: 2em; cursor : url('../Animationen_etc/Cur Datein/tail2.ani');}
+
+#Hintergrundmuster_Retro   {position:absolute; top: 10em; right: 20em; cursor : url('../Animationen_etc/Cur Datein/tail2.ani');}
+
+#Brennendes_Zeichen 	   {position:absolute; top: 20em; left: 20em; cursor : url('../Animationen_etc/Cur Datein/tail2.ani');}
+
+#Google_Bild 		   {position:absolute; top: 33em; right: 32em; cursor : url('../Animationen_etc/Cur Datein/tail2.ani');}
+
+#You_Tube_Bild 		   {position:absolute; top: 43em; left: 31em; cursor : url('../Animationen_etc/Cur Datein/tail2.ani');}
+
+#Gronkh 		   {position:absolute; top: 41em; right: 2em; cursor : url('../Animationen_etc/Cur Datein/tail2.ani');}
+
+#Minecraftexpertde 	   {position:absolute; top: 42em; left: 18em; cursor : url('../Animationen_etc/Cur Datein/tail2.ani');}
+
+#html_net_Logo             {position:absolute; top: 100em; left: 15em; cursor : url('../Animationen_etc/Cur Datein/tail2.ani');}
+
+#Gitarre 		   {position:absolute; top: 51.75em; right: 1em; cursor : url('../Animationen_etc/Cur Datein/tail2.ani');}
+
+#Blitz 			   {position:absolute; top: 52em; left: 30em; cursor : url('../Animationen_etc/Cur Datein/tail2.ani');}
+
+#Geld 			   {position:absolute; top: 78em; left: 20em; cursor : url('../Animationen_etc/Cur Datein/tail2.ani');}
+
+#Smilie 		   {position:absolute; top: 70em; right: 30em; cursor : url('../Animationen_etc/Cur Datein/tail2.ani');}
+
+#LOL 			   {position:absolute; top: 68em; left: 23em; cursor : url('../Animationen_etc/Cur Datein/tail2.ani');}
+
+#Drehende_Würfel 	   {position:absolute; top: 86em; left: 11em; cursor : url('../Animationen_etc/Cur Datein/tail2.ani');}
+
+#Drehende_Spielkarte 	   {position:absolute; top: 86em; right: 19em; cursor : url('../Animationen_etc/Cur Datein/tail2.ani');}
+
+#Drehendes_Feuerzeichen    {position:absolute; top: 128em; left: 35em; cursor : url('../Animationen_etc/Cur Datein/tail2.ani');}
+
+hr.Zwischen_h2_h2 {color: red;}
+
+hr.Zwischen_h3_h3 {color: black;}
+
+a:hover {background-color: #FFFFCC; cursor : url('blueglitter.ani');}
+
+a:active {background-color: #FFFFCC; color: red; cursor : url('banana-dance-ani.ani');}
+
+a:visited {color: #663300;cursor : url('../Animationen_etc/Cur Datein/bagnhead.ani');}
+
+a:link {color: #339900;}
+
+a.zurück-zur-Homepage {font-size: 25px; text-decoration: none;}
+
+span.Seiten {font-weight: bold; text-transform: capitalize;}
+
+#heading3 {color: blue;}
+
+#Inhaltsverzeichnis: {font-weight: normal; text-transform: none;}
+
+h2 {font: 200% Forte, "Century Gothic", Arial; text-decoration: underline;}
+
+h1 {font: 350% "Bauhaus 93", "Comic Sans MS", Arial; margin: 0px 20px 5px 20px; border-width: 3px; border-color: #99cc00; border-style: solid; text-align: center; letter-spacing: 1em; cursor : url('../Animationen_etc/Cur Datein/banana-dance-ani.ani');}
