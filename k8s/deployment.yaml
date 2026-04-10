@@ -16,8 +16,8 @@ spec:
     spec:
       containers:
         - name: web
-          image: localhost/old-school-homepage:latest
-          imagePullPolicy: Never  # local image, built and imported via ctr
+          image: registry.k8s.ts.conrad-klaus.de/old-school-homepage:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 80
           resources:
