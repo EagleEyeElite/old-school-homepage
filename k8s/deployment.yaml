@@ -1,0 +1,60 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: old-school-homepage
+  labels:
+    app: old-school-homepage
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: old-school-homepage
+  template:
+    metadata:
+      labels:
+        app: old-school-homepage
+    spec:
+      containers:
+        - name: web
+          image: localhost/old-school-homepage:latest
+          imagePullPolicy: Never  # local image, built and imported via ctr
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              cpu: "10m"
+              memory: "16Mi"
+            limits:
+              memory: "64Mi"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: old-school-homepage
+spec:
+  type: ClusterIP
+  selector:
+    app: old-school-homepage
+  ports:
+    - port: 80
+      targetPort: 80
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: old-school-homepage
+  annotations:
+    nginx.ingress.kubernetes.io/proxy-body-size: "0"
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: oldschool.conrad-klaus.de
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: old-school-homepage
+                port:
+                  number: 80
