@@ -51,10 +51,9 @@ kind: Ingress
 metadata:
   name: old-school-homepage
   annotations:
-    nginx.ingress.kubernetes.io/proxy-body-size: "0"
     cert-manager.io/cluster-issuer: letsencrypt-cloudflare
 spec:
-  ingressClassName: nginx
+  ingressClassName: traefik
   tls:
     - hosts:
         - oldschool.conrad-klaus.de
